@@ -6,15 +6,35 @@ body {
 }
 
 main.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
   background: linear-gradient(60deg, #1B1833, #441752, #AB4459);
   background-size: 300% 300%;
-  animation: color 7s ease-in-out infinite;
+  animation: color 17s ease-in-out infinite;
 }
 main.container h1 {
   margin: 0;
   padding: 0;
+  font-size: 3em;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+main.container .clock-wrapper {
+  margin-top: 1em;
+  padding: 1em 7em;
+  border-radius: 1em;
+  background: linear-gradient(60deg, #AB4459, #441752, #1B1833);
+  animation: colorAndFont 17s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+main.container .clock-wrapper p {
+  margin: 0;
+  font-style: italic;
+  font-size: 4em;
 }
 
 @keyframes color {
@@ -23,6 +43,24 @@ main.container h1 {
   }
   50% {
     background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes colorAndFont {
+  0% {
+    background-position: 0 50%;
+    color: #1B1833;
+  }
+  35% {
+    color: #AB4459;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  85% {
+    color: #1B1833;
   }
   100% {
     background-position: 0 50%;
