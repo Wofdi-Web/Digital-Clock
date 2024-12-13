@@ -34,8 +34,9 @@ main.container {
         border-radius: 1em;
         // border: 3px solid white;
         background: linear-gradient(60deg, #AB4459, #441752, #1B1833);
-        animation: colorAndFont 17s ease-in-out infinite;
+        animation: color 17s ease-in-out infinite;
         background-size: 300% 300%;
+        color: #f2f2f2;
         
         p {
             margin: 0;
@@ -57,22 +58,4 @@ main.container {
     }
 }
 
-@keyframes colorAndFont {
-    0% {
-        background-position: 0 50%;
-        color: #1B1833;
-    }
-    35% {
-        color: #AB4459;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    85% {
-        color: #1B1833;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
 
